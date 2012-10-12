@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# lxc-stop that executes the post-stop script
+# /var/lib/lxc/$container/hooks/pre-start
+#
+# This will be configurable in lxc >> v0.8
+# through the lxc.hook.pre-start config
+# parameter.
+
+# iterate over parameters and find the
+# container name
+argc=$#
+for (( argn=1; argn<=argc; argn++)); do
+    if [[ ${!argn} == "-n" ]]; then
+        argnext=$(( $argn + 1 ))
+        container=${!argnext}
+    fi
+done
+
+/usr/bin/lxc-stop "$@"
+
+if [ -x /var/lib/lxc/$container/hooks/post-stop ]; then
+    /var/lib/lxc/$container/hooks/post-stop
+fi
