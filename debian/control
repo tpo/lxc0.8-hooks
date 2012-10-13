@@ -1,0 +1,14 @@
+Source: lxc0.8-hooks
+Section: unknown
+Priority: extra
+Maintainer: Tomas Pospisek <tpo_deb@sourcepole.ch>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: https://github.com/tpo/lxc0.8-hooks
+Vcs-Git: git://github.com/tpo/lxc0.8-hooks.git
+
+Package: lxc0.8-hooks
+Architecture: all
+Depends: lxc
+Description: Hooks for lxc v0.8
+ Provides pre-start and post-stop hooks for lxc 0.8
