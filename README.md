@@ -38,6 +38,10 @@ lxc-stop. The result should look like this:
     -rwxr-xr-x 1 root root 172 Oct 12 22:21 post-stop
     -rwxr-xr-x 1 root root 128 Oct 12 21:46 pre-start
 
+You can build a debian package from this by issuing
+
+    dpkg-buildpackage
+
 
 License
 =======
