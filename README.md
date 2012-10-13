@@ -6,7 +6,7 @@ Hooks for lxc v0.8
 [lxc](https://github.com/lxc/lxc) 0.8 does not allow you to hook into a
 container and execute scripts at certain points in its lifecycle.
 
-Ubuntu has backported this facility for it's lxc 0.8, however Debian did
+Ubuntu has backported this facility for its lxc 0.8, however Debian did
 not.
 
 lxc0.8-hooks is a simple wrapper around lxc-start and lxc-stop that
