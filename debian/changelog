@@ -1,3 +1,9 @@
+lxc0.8-hooks (0.2-1) unstable; urgency=low
+
+  * chmod +x bin/*
+
+ -- Tomas Pospisek <tpo_deb@sourcepole.ch>  Wed, 17 Oct 2012 07:13:06 +0200
+
 lxc0.8-hooks (0.1-1) unstable; urgency=low
 
   * Initial release
